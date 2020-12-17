@@ -1,10 +1,10 @@
 def merge_ranges(meetings):
     """
-    :param
-    meetings: a list of integer tuples representing the beginning and end of meetings.
-    E.g. [(0, 1), (3, 5), (4, 8), (10, 12), (9, 10)]
-    :return: a list of integer tuples representing the occupied times.
-    E.g. [(0, 1), (3, 8), (9, 12)]
+    :param meetings: the beginning and end of meetings. E.g. [(0, 1), (3, 5), (4, 8), (10, 12), (9, 10)]
+    :type meetings: a python list of integer tuples.
+    :return: the occupied times. E.g. [(0, 1), (3, 8), (9, 12)]
+    :rtype: a python list of integer tuples.
+
     """
 
     sorted_meetings = sorted(meetings)
