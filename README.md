@@ -1,2 +1,2 @@
 # interviewcake
-My solutions to interviewcake problems.
+My solutions to interviewcake.com's problems.
