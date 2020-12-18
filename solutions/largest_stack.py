@@ -50,11 +50,6 @@ class MaxStack(object):
         return self.maxx.peek()
 
 
-
-
-
-
-
 # Tests
 
 class Test(unittest.TestCase):
