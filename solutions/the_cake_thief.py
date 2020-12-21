@@ -1,7 +1,8 @@
 import unittest
 
+
 def max_duffel_bag_value(cake_tuples, weight_capacity):
-    max_duffel_bag_value = [0] * (weight_capacity + 1)
+    max_duffel_bag_val = [0] * (weight_capacity + 1)
 
     for n in range(weight_capacity + 1):
         current_max_value = 0
@@ -11,13 +12,13 @@ def max_duffel_bag_value(cake_tuples, weight_capacity):
                 return float('inf')
 
             if cake_weight <= n:
-                max_value_using_cake = cake_value + max_duffel_bag_value[n - cake_weight]
+                max_value_using_cake = cake_value + max_duffel_bag_val[n - cake_weight]
 
                 current_max_value = max(current_max_value, max_value_using_cake)
 
-        max_duffel_bag_value[n] = current_max_value
+        max_duffel_bag_val[n] = current_max_value
 
-    return max_duffel_bag_value[weight_capacity]
+    return max_duffel_bag_val[weight_capacity]
 
 
 # Tests
